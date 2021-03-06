@@ -1,0 +1,76 @@
+* {
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+body {
+    background-image: url(empty-studio.jpg);
+    background-size: cover;
+    /* background-repeat:no-repeat; */
+    background-attachment: fixed;
+}
+
+div {
+    /* border : thin solid black; */
+}
+
+.container {
+    display: flex;
+    /* border-color: red; */
+}
+
+.headline {
+    align-self: flex-end;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.top {
+    height: 30vh;
+}
+
+.left, .right {
+    /* border-color: blue; */
+}
+
+.left {
+    width: 40vw;
+}
+
+.right {
+    width: 50vw;
+}
+
+.text {
+    width: 50%;
+}
+
+.frame {
+    max-width: 70%;
+    margin-top: -10px;
+}
+
+img {
+    width: 70%;
+    float: right;
+    /* position: absolute; */
+    /* left: 0; */
+}
+
+menu {
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    padding: 40px;
+  }

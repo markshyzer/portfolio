@@ -1,21 +1,59 @@
 * {
     font-family: 'Shippori Mincho B1', serif;
+    /* border: thin solid red; */
+    box-sizing: border-box;
 }
 
 body {
     background-image: url(empty-studio.jpg);
+    background-color: rgb(238, 238, 238);
+    /* background-position-y: -150px; */
     background-size: cover;
-    /* background-repeat:no-repeat; */
+    background-position: bottom;
+    background-position-y: -20vh;
     background-attachment: fixed;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#projects, #contact{
+    display: none;
 }
 
 div {
     /* border : thin solid black; */
 }
 
+.top {
+    display: flex;
+}
+
+.project-space {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow: scroll;
+    /* display: none; */
+
+}
+
+section {
+    scroll-snap-align: start;
+    /* scroll-snap-type: x mandatory; */
+
+    /* overflow-x: hidden; */
+}
+
+.slides > section:target{
+    transform: scale(0.8);
+}
+
 .container {
     display: flex;
-    /* border-color: red; */
+    border: thin solid red;
 }
 
 .headline {
@@ -26,8 +64,14 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
 .top {
-    height: 30vh;
+    height: 25vh;
 }
 
 .left, .right {
@@ -39,11 +83,12 @@ h1 {
 }
 
 .right {
-    width: 50vw;
+    width: 40vw;
+    margin-right: 20vw;
 }
 
 .text {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .frame {
@@ -60,6 +105,21 @@ img {
 
 menu {
     text-align: center;
+}
+
+#submenu {
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+    border-top: thin solid grey;
+    width: 50vw;
+    visibility: hidden;
+
+}
+
+#submenu ul {
+    /* border: thin solid green; */
+    padding: 10px;
 }
 
 p {

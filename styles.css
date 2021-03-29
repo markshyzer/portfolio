@@ -16,6 +16,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    font-family: inherit;
 }
 
 a:hover {
@@ -95,8 +96,12 @@ menu {
 }
 
 #submenu ul {
-    /* border: thin solid green; */
     padding: 10px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+
 }
 
 p {
@@ -119,8 +124,14 @@ ul {
           background-position-y: 0;
       }
 
+      .contactImage {
+        width: 80%;
+        align-self: center;
+        margin: 0px 10%;
+        margin-bottom: 10%;
+    }
+
       .container {
-          border: thin solid green;
           position: static;
           flex-direction: column;
       }

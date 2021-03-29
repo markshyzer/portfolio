@@ -1,13 +1,11 @@
 * {
     font-family: 'Shippori Mincho B1', serif;
-    /* border: thin solid red; */
     box-sizing: border-box;
 }
 
 body {
     background-image: url(empty-studio.jpg);
     background-color: rgb(251, 251, 251);
-    /* background-position-y: -150px; */
     background-size: cover;
     background-position: bottom;
     background-position-y: -20vh;
@@ -20,35 +18,27 @@ a {
     color: black;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 #projects, #contact{
     display: none;
 }
 
-div {
-    /* border : thin solid black; */
-}
-
 .top {
     display: flex;
+    height: 20vh;
 }
 
 .project-space {
     scroll-snap-type: x mandatory;
     display: flex;
     overflow: scroll;
-    /* display: none; */
-
 }
 
 section {
     scroll-snap-align: start;
-    /* scroll-snap-type: x mandatory; */
-
-    /* overflow-x: hidden; */
-}
-
-.slides > section:target{
-    transform: scale(0.8);
 }
 
 .container {
@@ -72,10 +62,6 @@ h2 {
     padding: 5px, 0;
 }
 
-.top {
-    height: 20vh;
-}
-
 .left {
     width: 40vw;
 }
@@ -85,21 +71,9 @@ h2 {
     margin-right: 20vw;
 }
 
-.text {
-    /* width: 50%; */
-}
-
-
-.frame {
-    /* max-width: 70%; */
-    margin-top: -10px;
-}
-
 img {
     width: 70%;
     float: right;
-    /* position: absolute; */
-    /* left: 0; */
 }
 
 .contactImage {
@@ -139,31 +113,21 @@ ul {
     padding: 40px;
   }
 
-
-
   @media only screen and (max-width: 768px) {
       /* for mobile  */
       body {
           background-position-y: 0;
-
       }
 
       .container {
-          /* display: block; */
           border: thin solid green;
           position: static;
           flex-direction: column;
       }
 
-
-
       .frame {
-          /* display: block; */
-          /* width: 100vw; */
-          width: 80vw;
-          margin: auto;
-          /* border: thick solid orange; */
-        margin-top: 0;
+        width: 80vw;
+        margin: auto;
       }
 
       .top {
@@ -172,11 +136,8 @@ ul {
       }
       
       .headline {
-        /* display: inline; */
-        /* border: thick solid tan; */
         position: relative;
         margin: auto;
-        /* align-self: default; */
         width: 100vw;
         text-align: center;
         margin-top: 20px;
@@ -187,16 +148,12 @@ ul {
       }
 
       .text {
-          /* width: 100vw; */
-          /* display: block; */
-          /* border: thin solid blue; */
           width: 80vw;
           margin: auto;
           float: none;
       }
 
       #submenu ul {
-        /* border: thin solid green; */
         padding: 5px;
     }
   }
